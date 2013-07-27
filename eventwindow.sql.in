@@ -1,0 +1,12 @@
+CREATE FUNCTION conditional_true_event(boolean) RETURNS int
+AS '$libdir/eventwindow', 'conditional_true_event'
+LANGUAGE C STABLE
+CALLED ON NULL INPUT
+WINDOW;
+
+CREATE FUNCTION conditional_change_event(anyelement) RETURNS int
+AS '$libdir/eventwindow', 'conditional_change_event'
+LANGUAGE C STABLE
+CALLED ON NULL INPUT
+WINDOW;
+

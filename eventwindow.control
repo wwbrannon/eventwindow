@@ -1,0 +1,5 @@
+# event window function extension
+comment = 'event-based window functions'
+default_version = '1.0'
+module_pathname = '$libdir/eventwindow'
+relocatable = true
